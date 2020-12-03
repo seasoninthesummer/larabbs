@@ -70,7 +70,8 @@ body {
 }
 
 /* Topic Index Page */
-topics-index-page, .categories-show-page{
+@import "topic_body";
+topics-index-page, .categories-show-page {
   .topic-list {
     .nav > li > a {
       position: relative;
@@ -109,3 +110,8 @@ topics-index-page, .categories-show-page{
 #app > div.container {
   margin-bottom: 100px;
 }
+
+.simditor-body img {
+  max-width: 100%;
+}
+
