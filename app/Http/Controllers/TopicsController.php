@@ -7,6 +7,7 @@ use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\TopicRequest;
+use Auth;
 
 class TopicsController extends Controller
 {
@@ -17,6 +18,7 @@ class TopicsController extends Controller
 
     public function index(Request $request, Topic $topic)
     {
+
 //        $topics = Topic::with('user', 'category')->paginate(30);
 //        return view('topics.index', compact('topics'));
         $topics = $topic->withOrder($request->order)->paginate(20);
@@ -25,23 +27,28 @@ class TopicsController extends Controller
 
     public function show(Category $category, Request $request, Topic $topic)
     {
+
         // 读取分类 ID 关联的话题，并按每 20 条分页
         $topics = $topic->withOrder($request->order)
             ->where('category_id', $category->id)
             ->paginate(20);
+
         // 传参变量话题和分类到模板中
-        return view('topics.index', compact('topics', 'category'));
+        return view('topics.show', compact('topic'));
     }
 
     public function create(Topic $topic)
     {
-        return view('topics.create_and_edit', compact('topic'));
+        $categories = Category::all();
+        return view('topics.create_and_edit', compact('topic', 'categories'));
     }
 
-    public function store(TopicRequest $request)
+    public function store(TopicRequest $request, Topic $topic)
     {
-        $topic = Topic::create($request->all());
-        return redirect()->route('topics.show', $topic->id)->with('message', 'Created successfully.');
+        $topic->fill($request->all());
+        $topic->user_id = Auth::id();
+        $topic->save();
+        return redirect()->route('topics.show', $topic->id)->with('success', '帖子创建成功！');
     }
 
     public function edit(Topic $topic)
