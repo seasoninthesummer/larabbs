@@ -12,7 +12,7 @@ class User extends Authenticatable implements MustVerifyEmailContract
     use Notifiable, MustVerifyEmailTrait;
 
     protected $fillable = [
-        'name', 'email', 'password','introduction','avatar',
+        'name', 'email', 'password', 'introduction', 'avatar',
     ];
     protected $hidden = [
         'password', 'remember_token',
@@ -22,8 +22,14 @@ class User extends Authenticatable implements MustVerifyEmailContract
     {
         return $this->hasMany(Topic::class);
     }
+
     public function isAuthorOf($model)
     {
         return $this->id == $model->user_id;
+    }
+
+    public function repies()
+    {
+        return $this->hasMany(Reply::class);
     }
 }
