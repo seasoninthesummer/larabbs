@@ -21,12 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="3391b235-2414-4dcd-8ba2-192b4f67dce7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/RepliesController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/ReplyRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/ReplyRequest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/ReplyObserver.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_reply_box.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_reply_box.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +189,7 @@
       <option name="presentableId" value="Default" />
       <updated>1607046524666</updated>
       <workItem from="1607046525814" duration="7756000" />
-      <workItem from="1607135463711" duration="3902000" />
+      <workItem from="1607135463711" duration="6650000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1607046632637</created>
@@ -225,6 +221,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="111" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="1244" y="390" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1" timestamp="1607140354350">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1244" y="390" key="#com.jetbrains.php.refactoring.move.PhpMoveClassDialog#1/0.0.1920.1040@0.0.1920.1040" timestamp="1607140354350" />
     <state x="655" y="191" key="NewPhpClassDialog" timestamp="1607046893915">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -237,5 +237,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="452" y="189" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1607046635656" />
+    <state x="1103" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1607141003062">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1103" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607141003062" />
   </component>
 </project>
