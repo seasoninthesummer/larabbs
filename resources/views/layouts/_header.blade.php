@@ -36,7 +36,9 @@
             </a>
           </li>
           <li class="nav-item notification-badge">
-            <a class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white" href="{{ route('notifications.index') }}">
+            <a
+              class="nav-link mr-3 badge badge-pill badge-{{ Auth::user()->notification_count > 0 ? 'hint' : 'secondary' }} text-white"
+              href="{{ route('notifications.index') }}">
               {{ Auth::user()->notification_count }}
             </a>
           </li>
@@ -47,13 +49,22 @@
               {{ Auth::user()->name }}
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              @can('manage_contents')
+                <a class="dropdown-item" href="{{ url(config('administrator.uri')) }}">
+                  <i class="fas fa-tachometer-alt mr-2"></i>
+                  管理后台
+                </a>
+                <div class="dropdown-divider"></div>
+              @endcan
               <a class="dropdown-item" href="{{ route('users.show', Auth::id()) }}">个人中心</a>
               <a class="dropdown-item" href="{{ route('users.edit', Auth::id()) }}">编辑资料</a>
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" id="logout" href="#">
                 <form action="{{ route('logout') }}" method="POST">
                   {{ csrf_field() }}
-                  <button class="btn btn-block btn-danger" type="submit" name="button" onsubmit="return confirm('您确定要退出吗')">退出</button>
+                  <button class="btn btn-block btn-danger" type="submit" name="button"
+                          onsubmit="return confirm('您确定要退出吗')">退出
+                  </button>
                 </form>
               </a>
             </div>
