@@ -17,6 +17,8 @@ return array(
     // 配置信息文件存放目录
     'settings_config_path' => config_path('administrator/settings'),
 
+
+
     /*
      * 后台菜单数组，多维数组渲染结果为多级嵌套菜单。
      *
@@ -83,6 +85,7 @@ return array(
 
     // 当选项 `permission` 权限检测不通过时，会重定向用户到此处设置的路径
     'login_path' => 'permission-denied',
+
 
     // 允许在登录成功后使用 Session::get('redirect') 将用户重定向到原本想要访问的后台页面
     'login_redirect_key' => 'redirect',
