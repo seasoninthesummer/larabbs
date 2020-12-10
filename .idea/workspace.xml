@@ -20,12 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3391b235-2414-4dcd-8ba2-192b4f67dce7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/larabbs.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbs.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/_header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +204,7 @@
       <workItem from="1607046525814" duration="7756000" />
       <workItem from="1607135463711" duration="14591000" />
       <workItem from="1607301687660" duration="12815000" />
-      <workItem from="1607559887057" duration="2901000" />
+      <workItem from="1607559887057" duration="3918000" />
     </task>
     <task id="LOCAL-00001" summary="111">
       <created>1607046632637</created>
@@ -252,10 +248,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="655" y="191" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607046893915" />
-    <state x="1141" y="447" key="NewPhpFileDialog" timestamp="1607148059106">
+    <state x="1141" y="447" key="NewPhpFileDialog" timestamp="1607565697386">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1141" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607148059106" />
+    <state x="1141" y="447" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607565697386" />
     <state x="452" y="189" key="Vcs.Push.Dialog.v2" timestamp="1607046635656">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
